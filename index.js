@@ -21,9 +21,11 @@ app.use("/assets", express.static('./assets'));
 app.set('view engine', 'ejs');
 
 // Bodyparser Configuration 
+
 app.use(express.urlencoded({ extended: false }))
 
 // Express session Configuration
+
 app.use(
     session({
         secret: 'secret',
